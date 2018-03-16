@@ -1,0 +1,23 @@
+$(OBJDIR)/Calibration/NaturalPointClient.o: \
+ Calibration/NaturalPointClient.cpp  \
+ Calibration/NaturalPointClient.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/Thread.h \
+ /home/museum/src/Vrui-4.2-006/Threads/MutexCond.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Time.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/Config.h \
+ /home/museum/src/Vrui-4.2-006/Threads/TripleBuffer.h \
+ /home/museum/src/Vrui-4.2-006/Misc/SizedTypes.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Atomic.h \
+ /home/museum/src/Vrui-4.2-006/Comm/UDPSocket.h \
+ /home/museum/src/Vrui-4.2-006/Comm/IPv4SocketAddress.h \
+ /home/museum/src/Vrui-4.2-006/Comm/IPv4Address.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Point.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Rotation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HVector.h \
+ Calibration/PacketBuffer.h  \
+ /home/museum/src/Vrui-4.2-006/Misc/Endianness.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ThrowStdErr.h  \
+ /home/museum/src/Vrui-4.2-006/Misc/FunctionCalls.h

@@ -1,0 +1,24 @@
+$(OBJDIR)/Vrui/Internal/ImageSequenceMovieSaver.o: \
+ Vrui/Internal/ImageSequenceMovieSaver.cpp  \
+ /home/museum/src/Vrui-4.2-006/Vrui/Internal/ImageSequenceMovieSaver.h \
+ /home/museum/src/Vrui-4.2-006/Threads/MutexCond.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Time.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/Config.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Thread.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/Internal/MovieSaver.h \
+ /home/museum/src/Vrui-4.2-006/Threads/TripleBuffer.h \
+ /home/museum/src/Vrui-4.2-006/Misc/SizedTypes.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Atomic.h  \
+ /home/museum/src/Vrui-4.2-006/Misc/ThrowStdErr.h \
+ /home/museum/src/Vrui-4.2-006/Misc/StandardValueCoders.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ValueCoder.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ConfigurationFile.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ConfigurationFile.icpp \
+ /home/museum/src/Vrui-4.2-006/Misc/StringMarshaller.h \
+ /home/museum/src/Vrui-4.2-006/Images/WriteImageFile.h \
+ /home/museum/src/Vrui-4.2-006/Images/RGBImage.h  \
+ /home/museum/src/Vrui-4.2-006/Images/Image.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLScalarLimits.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/GL/GLColor.h \
+ /home/museum/src/Vrui-4.2-006/Images/BaseImage.h

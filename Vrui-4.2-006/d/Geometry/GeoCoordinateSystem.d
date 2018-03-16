@@ -1,0 +1,31 @@
+$(OBJDIR)/Geometry/GeoCoordinateSystem.o: \
+ Geometry/GeoCoordinateSystem.cpp  \
+ /home/museum/src/Vrui-4.2-006/Geometry/GeoCoordinateSystem.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Autopointer.h \
+ /home/museum/src/Vrui-4.2-006/Threads/RefCounted.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Atomic.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/Config.h \
+ /home/museum/src/Vrui-4.2-006/IO/Directory.h  \
+ /home/museum/src/Vrui-4.2-006/Misc/FileTests.h \
+ /home/museum/src/Vrui-4.2-006/IO/File.h  \
+ /home/museum/src/Vrui-4.2-006/Misc/Endianness.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Point.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Box.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/Ray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/SolidHitResult.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HitResult.h \
+ /home/museum/src/Vrui-4.2-006/Math/Constants.h \
+ /home/museum/src/Vrui-4.2-006/Misc/SelfDestructPointer.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ThrowStdErr.h \
+ /home/museum/src/Vrui-4.2-006/IO/ValueSource.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Geoid.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Matrix.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HVector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Rotation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/OrthonormalTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/AlbersEqualAreaProjection.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/LambertConformalProjection.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/TransverseMercatorProjection.h

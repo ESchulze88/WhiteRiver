@@ -1,0 +1,12 @@
+$(OBJDIR)/Vrui/OrthogonalCoordinateTransform.o: \
+ Vrui/OrthogonalCoordinateTransform.cpp  \
+ /home/museum/src/Vrui-4.2-006/Vrui/OrthogonalCoordinateTransform.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/OrthogonalTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Point.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HVector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Rotation.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/CoordinateTransform.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/Geometry.h

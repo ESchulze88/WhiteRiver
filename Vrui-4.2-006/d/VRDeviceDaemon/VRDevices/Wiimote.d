@@ -1,0 +1,24 @@
+$(OBJDIR)/VRDeviceDaemon/VRDevices/Wiimote.o: \
+ VRDeviceDaemon/VRDevices/Wiimote.cpp  \
+ /home/museum/src/Vrui-4.2-006/VRDeviceDaemon/VRDevices/Wiimote.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CallbackData.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CallbackList.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Mutex.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/Config.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Cond.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Time.h  \
+ /home/museum/src/Vrui-4.2-006/Threads/MutexCond.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Thread.h \
+ /home/museum/src/Vrui-4.2-006/Math/BrokenLine.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ThrowStdErr.h \
+ /home/museum/src/Vrui-4.2-006/Misc/StandardValueCoders.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ValueCoder.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CompoundValueCoders.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CompoundValueCoders.icpp \
+ /home/museum/src/Vrui-4.2-006/Misc/ConfigurationFile.h \
+ /home/museum/src/Vrui-4.2-006/Misc/ConfigurationFile.icpp \
+ /home/museum/src/Vrui-4.2-006/Misc/StringMarshaller.h \
+ /home/museum/src/Vrui-4.2-006/Math/MathValueCoders.h

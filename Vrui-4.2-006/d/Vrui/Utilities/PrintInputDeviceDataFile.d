@@ -1,0 +1,27 @@
+$(OBJDIR)/Vrui/Utilities/PrintInputDeviceDataFile.o: \
+ Vrui/Utilities/PrintInputDeviceDataFile.cpp  \
+ /home/museum/src/Vrui-4.2-006/Misc/StringMarshaller.h \
+ /home/museum/src/Vrui-4.2-006/IO/File.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Endianness.h \
+ /home/museum/src/Vrui-4.2-006/Misc/Autopointer.h \
+ /home/museum/src/Vrui-4.2-006/Threads/RefCounted.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Atomic.h \
+ /home/museum/src/Vrui-4.2-006/Threads/Config.h \
+ /home/museum/src/Vrui-4.2-006/IO/SeekableFile.h \
+ /home/museum/src/Vrui-4.2-006/IO/OpenFile.h \
+ /home/museum/src/Vrui-4.2-006/IO/Directory.h \
+ /home/museum/src/Vrui-4.2-006/Misc/FileTests.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/Geometry.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/InputDevice.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CallbackList.h \
+ /home/museum/src/Vrui-4.2-006/Misc/CallbackData.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Point.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Ray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/OrthonormalTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HVector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Rotation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Matrix.h \
+ /home/museum/src/Vrui-4.2-006/Vrui/InputDeviceFeature.h

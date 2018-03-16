@@ -1,0 +1,28 @@
+$(OBJDIR)/GL/GLTransformationWrappers.o: \
+ GL/GLTransformationWrappers.cpp  \
+ /home/museum/src/Vrui-4.2-006/GL/GLTransformationWrappers.icpp \
+ /home/museum/src/Vrui-4.2-006/GL/GLTransformationWrappers.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLMatrixEnums.h \
+ /home/museum/src/Vrui-4.2-006/Math/Math.h  \
+ /home/museum/src/Vrui-4.2-006/Geometry/TranslationTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Vector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/ComponentArray.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Point.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/HVector.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/RotationTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Rotation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/OrthonormalTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/Matrix.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/UniformScalingTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/OrthogonalTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/ScalingTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/AffineTransformation.h \
+ /home/museum/src/Vrui-4.2-006/Geometry/ProjectiveTransformation.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLMatrixTemplates.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLVector.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLGetMatrixTemplates.h \
+ /home/museum/src/Vrui-4.2-006/GL/GLGetTemplates.h \
+ /home/museum/src/Vrui-4.2-006/GL/Extensions/GLARBShaderObjects.h \
+ /home/museum/src/Vrui-4.2-006/GL/TLSHelper.h \
+ /home/museum/src/Vrui-4.2-006/GL/Config.h \
+ /home/museum/src/Vrui-4.2-006/GL/Extensions/GLExtension.h

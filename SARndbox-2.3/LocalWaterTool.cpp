@@ -34,6 +34,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #include "WaterTable2.h"
 #include "Sandbox.h"
 
+
 /***************************************
 Static elements of class LocalWaterTool:
 ***************************************/
@@ -53,6 +54,7 @@ LocalWaterToolFactory* LocalWaterTool::initClass(Vrui::ToolManager& toolManager)
 	factory->setNumButtons(2);
 	factory->setButtonFunction(0,"Rain");
 	factory->setButtonFunction(1,"Dry");
+	//factory->setButtonFunction(2,"LocalWaterTool");
 	
 	/* Register and return the class: */
 	toolManager.addClass(factory,Vrui::ToolManager::defaultToolFactoryDestructor);
@@ -120,7 +122,7 @@ void LocalWaterTool::glRenderActionTransparent(GLContextData& contextData) const
 	
 	/* Get the current rain disk position and size in camera coordinates: */
 	Vrui::Point rainPos=Vrui::getInverseNavigationTransformation().transform(getButtonDevicePosition(0));
-	Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(3);
+	Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(0);
 	
 	/* Construct the rain cylinder: */
 	Vrui::Vector z=application->waterTable->getBaseTransform().inverseTransform(Vrui::Vector(0,0,1));
@@ -177,8 +179,11 @@ void LocalWaterTool::addWater(GLContextData& contextData) const
 		glDisable(GL_CULL_FACE);
 		
 		/* Get the current rain disk position and size in camera coordinates: */
-		Vrui::Point rainPos=Vrui::getInverseNavigationTransformation().transform(getButtonDevicePosition(0));
-		Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(3);
+//ERIC: Set rain position here!
+		Vrui::Point rainPos=Vrui::Point(13.36,11.14,-68.09);
+		Vrui::Point rainPosTwo=Vrui::Point(-10.4512, 10.6391,-78.6261);
+		//Vrui::Point rainPos=Vrui::getInverseNavigationTransformation().transform(getButtonDevicePosition(0));
+		Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(2);
 		
 		/* Render the rain disk: */
 		Vrui::Vector z=application->waterTable->getBaseTransform().inverseTransform(Vrui::Vector(0,0,1));
@@ -188,11 +193,27 @@ void LocalWaterTool::addWater(GLContextData& contextData) const
 		y*=rainRadius/Geometry::mag(y);
 		
 		glVertexAttrib1fARB(1,adding/application->waterSpeed);
+
+
+		//Start audio
+//ERIC:TODO move to different location or button press
+		// if(system("pgrep xplayer")) 
+		// {
+		// 	int tst = system("xdg-open ./etc/FloodAudio.mp3");
+		// }
+
 		glBegin(GL_POLYGON);
 		for(int i=0;i<32;++i)
 			{
 			Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
 			glVertex(rainPos+x*Math::cos(angle)+y*Math::sin(angle));
+			}
+		glEnd();
+		glBegin(GL_POLYGON);
+		for(int i=0;i<32;++i)
+			{
+			Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
+			glVertex(rainPosTwo+x*Math::cos(angle)+y*Math::sin(angle));
 			}
 		glEnd();
 		

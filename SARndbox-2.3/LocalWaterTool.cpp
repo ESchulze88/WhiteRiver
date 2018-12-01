@@ -180,10 +180,14 @@ void LocalWaterTool::addWater(GLContextData& contextData) const
 		
 		/* Get the current rain disk position and size in camera coordinates: */
 //ERIC: Set rain position here!
-		Vrui::Point rainPos=Vrui::Point(13.36,11.14,-68.09);
-		Vrui::Point rainPosTwo=Vrui::Point(-10.4512, 10.6391,-78.6261);
+		Vrui::Point rainPosMain=Vrui::Point(45.4913,-50.3619,-124.993);//Main Dam
+	//	Vrui::Point rainPosBridge=Vrui::Point(23.26, 0.03,-144.31); //otherSide Of bridge
+		Vrui::Point rainPosEdge=Vrui::Point(-1.8459, -51.5691,-125.446); //start of river
+	//	Vrui::Point rainPosBack=Vrui::Point(34.01, 9.57,-143.11); //Back area
+		//Vrui::Point rainPosLeftBridge=Vrui::Point(-0.55, 5.1,-136.34); //Back area
+		
 		//Vrui::Point rainPos=Vrui::getInverseNavigationTransformation().transform(getButtonDevicePosition(0));
-		Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(2);
+		Vrui::Scalar rainRadius=Vrui::getPointPickDistance()*Vrui::Scalar(1);
 		
 		/* Render the rain disk: */
 		Vrui::Vector z=application->waterTable->getBaseTransform().inverseTransform(Vrui::Vector(0,0,1));
@@ -203,17 +207,36 @@ void LocalWaterTool::addWater(GLContextData& contextData) const
 		// }
 
 		glBegin(GL_POLYGON);
-		for(int i=0;i<32;++i)
+		for(int i=0;i<3000;++i)//750
 			{
 			Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
-			glVertex(rainPos+x*Math::cos(angle)+y*Math::sin(angle));
+			glVertex(rainPosMain+x*Math::cos(angle)+y*Math::sin(angle));
 			}
 		glEnd();
+		// glBegin(GL_POLYGON);
+		// for(int i=0;i<250;++i)//150
+		// 	{
+		// 		Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
+		// 		glVertex(rainPosBridge+x*Math::cos(angle)+y*Math::sin(angle));
+		// 	}
+		// glEnd();
+
+
+		// glBegin(GL_POLYGON);
+		// for(int i=0;i<850;++i)
+		// 	{
+		// 		Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
+		// 		glVertex(rainPosBack+x*Math::cos(angle)+y*Math::sin(angle));
+
+		// 	}
+		// glEnd();
+
 		glBegin(GL_POLYGON);
-		for(int i=0;i<32;++i)
+		for(int i=0;i<2000;++i)//550
 			{
-			Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
-			glVertex(rainPosTwo+x*Math::cos(angle)+y*Math::sin(angle));
+				Vrui::Scalar angle=Vrui::Scalar(2)*Math::Constants<Vrui::Scalar>::pi*Vrui::Scalar(i)/Vrui::Scalar(32);
+				glVertex(rainPosEdge+x*Math::cos(angle)+y*Math::sin(angle));
+
 			}
 		glEnd();
 		
